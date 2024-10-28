@@ -106,7 +106,7 @@ if err != nil {
 memMetric.AddTagColumn("host", types.STRING)
 memMetric.AddTimestampColumn("ts", types.TIMESTAMP_MILLISECOND)
 memMetric.AddFieldColumn("mem_usage", types.FLOAT)
-err = memMetric.AddRow("127.0.0.1", time.Now(), 112)
+err = memMetric.AddRow("127.0.0.1", time.Now(), 1.12)
 if err != nil {
     // 处理错误
 }
